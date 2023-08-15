@@ -42,7 +42,7 @@ export default class Page extends Component {
     componentDidMount() {
         this.timeout = setTimeout(() => {
             this.setState({ isVisible: true });
-        }, 300);
+        }, 500);
     }
 
     componentWillUnmount() {
