@@ -1,34 +1,46 @@
+# Downtube NextJS
+<img src="https://i.imgur.com/1DIr42a.png" width="700" title="Search">
+<img src="https://i.imgur.com/qXGQ5Fj.png" width="700" title="File sizes">
+<img src="https://i.imgur.com/6jDx1Eh.png" width="700" title="Description">
+<img src="https://i.imgur.com/2Q7GUig.png" width="700" title="Progress bar">
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Current features
+- Search from any youtube URL
+- Get channel and video info
+- File sizes before downloading
+- Video description with tags
+- Up to three download options (720p, 360p and Audio only)
+- Progress bar while downloading
+
+## Todo
+- Option to download higher res. (using ffmpeg to merge video and audio)
+- Option to choose audio language (for dubbed videos)
+- Option to cancel download (Button near progress bar)
 
 ## Getting Started
 
-First, run the development server:
+First of all, install dependencies:
 
 ```bash
-npm run dev
+yarn
 # or
+npm install
+```
+
+Then, run development server:
+
+```bash
 yarn dev
 # or
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## PS
 
-## Learn More
+Feel free to make a fork and use the source for creating your own youtube downloader project. If you use this one as a template for your project, just please make sure to give the credits to this repo.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
