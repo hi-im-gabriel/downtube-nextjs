@@ -36,13 +36,13 @@ export default class Page extends Component {
         videoInfo: null,
         errorMessage: null,
         downloadingPercentage: null,
-        isviSible: false
+        isVisible: false
     }
 
     componentDidMount() {
         this.timeout = setTimeout(() => {
             this.setState({ isVisible: true });
-        }, 100);
+        }, 300);
     }
 
     componentWillUnmount() {
