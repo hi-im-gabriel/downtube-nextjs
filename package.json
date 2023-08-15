@@ -1,0 +1,25 @@
+{
+  "name": "downtube-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "js-file-downloader": "^1.1.25",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-tsparticles": "^2.12.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "tsparticles": "^2.12.0",
+    "ytdl-core": "^4.11.5"
+  }
+}
