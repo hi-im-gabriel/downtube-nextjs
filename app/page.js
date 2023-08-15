@@ -35,7 +35,18 @@ export default class Page extends Component {
         isSearching: false,
         videoInfo: null,
         errorMessage: null,
-        downloadingPercentage: null
+        downloadingPercentage: null,
+        isviSible: false
+    }
+
+    componentDidMount() {
+        this.timeout = setTimeout(() => {
+            this.setState({ isVisible: true });
+        }, 100);
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.timeout);
     }
 
     particlesInit = async engine => await loadFull(engine)
@@ -149,7 +160,7 @@ export default class Page extends Component {
                         }))
                     }
                 })
-                setTimeout(() => this.setState({downloadingPercentage: null}), 2000)
+                setTimeout(() => this.setState({ downloadingPercentage: null }), 2000)
             })
     }
 
@@ -160,9 +171,12 @@ export default class Page extends Component {
                     url='/particles.json' />
                 {this.state.isParticleLoading ?
                     <Loader /> :
-                    <Container>
+                    <Container style={{
+                        opacity: this.state.isVisible ? 1 : 0,
+                        transition: 'opacity 0.5s ease-in-out',
+                    }}>
                         <Grid verticalAlign='middle' textAlign='center' stackable>
-                            <Form isSearching={this.state.isSearching} videoUrlError={this.state.videoUrlError} 
+                            <Form isSearching={this.state.isSearching} videoUrlError={this.state.videoUrlError}
                                 onChangeInput={this.onChangeInput} onSearch={this.onSearch} />
                             <ErrorMessage errorMessage={this.state.errorMessage} active={Boolean(this.state.errorMessage)} />
                             <VideoCard videoInfo={this.state.videoInfo} active={Boolean(this.state.videoInfo)} downloadingPercentage={this.state.downloadingPercentage}

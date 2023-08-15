@@ -1,4 +1,11 @@
 # Downtube NextJS
+
+![Vercel Badge](https://img.shields.io/badge/Vercel-Deployed-green?logo=vercel&logoColor=black&labelColor=white)
+![Cloudflare Badge](https://img.shields.io/badge/Cloudflare-Proxied-green?logo=cloudflare&logoColor=yellow&labelColor=white)
+![React Badge](https://img.shields.io/badge/React-Built-teal?logo=react&logoColor=teal&labelColor=white)
+![Next Badge](https://img.shields.io/badge/React-Built-blue?logo=next.js&logoColor=black&labelColor=white)
+
+
 <img src="https://i.imgur.com/1DIr42a.png" width="700" title="Search">
 <img src="https://i.imgur.com/qXGQ5Fj.png" width="700" title="File sizes">
 <img src="https://i.imgur.com/6jDx1Eh.png" width="700" title="Description">
@@ -40,7 +47,5 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## PS
-
-Feel free to make a fork and use the source for creating your own youtube downloader project. If you use this one as a template for your project, just please make sure to give the credits to this repo.
-
+## Contact
+[dev@gabrieltavares.dev](mailto:dev@gabrieltavares.dev)
