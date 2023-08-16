@@ -47,7 +47,8 @@ export default class VideoCard extends Component {
                             <div style={{
                                 display: 'flex',
                                 flexDirection: 'row',
-                                justifyContent: 'space-evenly'
+                                justifyContent: 'space-evenly',
+                                paddingBottom: '1em'
                             }}>
                                 {videoInfo.formats.map((item, index) => (
                                     <Button as='div' labelPosition='left' key={index}
