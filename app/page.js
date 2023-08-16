@@ -148,8 +148,18 @@ export default class Page extends Component {
             }
         })
         download.start()
-            .then(() => this.setState({ downloadingPercentage: 100 }))
-            .catch(err => this.setState({ errorMessage: 'Error occurred while downloading video, please, try again later.' }))
+            .then(() => {
+                this.setState({ downloadingPercentage: 100 })
+                setTimeout(() => this.setState({ downloadingPercentage: null }), 2000)
+            })
+            .catch(err => {
+                if (err.request.status == 429){
+                    this.setState({ errorMessage: 'Numerous downloads in a short time, please wait for 10 seconds and then try again.' })    
+                } else {
+                    this.setState({ errorMessage: 'Error occurred while downloading video, please, try again later.' })
+                }
+                this.setState({ downloadingPercentage: null })
+            })
             .finally(() => {
                 this.setState({
                     videoInfo: {
@@ -160,7 +170,6 @@ export default class Page extends Component {
                         }))
                     }
                 })
-                setTimeout(() => this.setState({ downloadingPercentage: null }), 2000)
             })
     }
 
