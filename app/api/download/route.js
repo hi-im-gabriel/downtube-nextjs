@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 const ytdl = require('ytdl-core');
 
+export const runtime = (process.env.NODE_ENV == 'development') ? 'nodejs' : 'edge';
+
 export const POST = async req => {
     const jsonBody = await req.json()
     const { videoId, itag } = jsonBody
