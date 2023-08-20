@@ -46,6 +46,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
+** For production, change the `allowedHostInProduction` const inside `middleware.js` file, or remove the file if you won't need.
 ## Contact
 [dev@gabrieltavares.dev](mailto:dev@gabrieltavares.dev)
