@@ -1,9 +1,23 @@
-# Downtube NextJS
-
-![Vercel Badge](https://img.shields.io/badge/Vercel-Deployed-green?logo=vercel&logoColor=black&labelColor=white)
-![Cloudflare Badge](https://img.shields.io/badge/Cloudflare-Proxied-green?logo=cloudflare&logoColor=yellow&labelColor=white)
-![React Badge](https://img.shields.io/badge/React-Built-teal?logo=react&logoColor=teal&labelColor=white)
-![Next Badge](https://img.shields.io/badge/React-Built-blue?logo=next.js&logoColor=black&labelColor=white)
+<h1 align="center">Downtube NextJS</h1>
+<p align="center">
+    <a href="https://github.com/gabzin/django-ytdownloader/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-red.svg?labelColor=white" />
+    </a>
+    <a href="https://vercel.com/">
+        <img src="https://img.shields.io/badge/Vercel-Deployed-green?logo=vercel&logoColor=black&labelColor=white" />
+    </a>
+    <a href="https://www.cloudflare.com/">
+        <img src="https://img.shields.io/badge/Cloudflare-Proxied-green?logo=cloudflare&logoColor=yellow&labelColor=white" />
+    </a>
+    <a href="https://react.dev/">
+        <img src="https://img.shields.io/badge/React-Built-teal?logo=react&logoColor=teal&labelColor=white" />
+    </a>
+    <a href="https://nextjs.org/">
+        <img src="https://img.shields.io/badge/React-Built-blue?logo=next.js&logoColor=black&labelColor=white" />
+    </a>            
+    <p align="center">⭐️ Star this project ⭐️</p>
+    <a href="https://downtube.vercel.app/"><p align="center">https://downtube.gabrieltavares.dev/</p></a>
+</p>
 
 
 <img src="https://i.imgur.com/1DIr42a.png" width="700" title="Search">
