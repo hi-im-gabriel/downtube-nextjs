@@ -64,4 +64,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 * Change the `allowedHostInProduction` const inside `middleware.js` file for your domain, or remove the file if you won't need.
 * Change the value of `Access-Control-Allow-Origin` key inside `next.config.js` file for your domain.
 ## Contact
-[dev@gabrieltavares.dev](mailto:dev@gabrieltavares.dev)
+[hello@gabrieltavares.dev](mailto:hello@gabrieltavares.dev)
