@@ -28,17 +28,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Current features
-- Search from any youtube URL
-- Get channel and video info
-- File sizes before downloading
-- Video description with tags
-- Up to three download options (720p, 360p and Audio only)
-- Progress bar while downloading
-
-## Todo
-- Option to download higher res. (using ffmpeg to merge video and audio)
-- Option to choose audio language (for dubbed videos)
-- Option to cancel download (Button near progress bar)
+- ✅ Search from any youtube URL
+- ✅ Get channel and video info
+- ✅ File sizes before downloading
+- ✅ Video description with tags
+- ✅ Up to three download options (720p, 360p and Audio only)
+- ✅ Progress bar while downloading
+- ✅ Allow short URLs
+- ⬜ Option to download higher res. (using ffmpeg to merge video and audio)
+- ⬜ Option to choose audio language (for dubbed videos)
+- ⬜ Option to cancel download (Button near progress bar)
 
 ## Getting Started
 

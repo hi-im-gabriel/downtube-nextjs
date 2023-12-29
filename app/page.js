@@ -54,8 +54,8 @@ export default class Page extends Component {
     particlesLoaded = () => this.setState({ isParticleLoading: false })
 
     stripYoutubeId = url => {
-        url = url.split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
-        return (url[2] !== undefined) ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
+        url = url.split(/^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/|shorts\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/);
+        return url.length > 1 ? url[1] : '';
     }
 
     validateYoutubeUrlId = () => {
