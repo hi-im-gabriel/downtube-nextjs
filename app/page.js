@@ -5,7 +5,6 @@ import { Grid, Container } from "semantic-ui-react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import JsFileDownloader from "js-file-downloader";
-const ytdl = require("@distube/ytdl-core");
 
 import { formatTime, formatNumber } from "./utils";
 import ErrorMessage from "./components/ErrorMessage";
@@ -57,6 +56,11 @@ export default class Page extends Component {
         return url.length > 1 ? url[1] : "";
     };
 
+    validateID = (id) => {
+        const idRegex = /^[a-zA-Z0-9-_]{11}$/;
+        return idRegex.test(id.trim());
+    };
+
     validateYoutubeUrlId = () => {
         if (!this.state.videoUrl) {
             this.setState({ videoUrlError: true });
@@ -64,7 +68,7 @@ export default class Page extends Component {
         }
         let videoId = this.stripYoutubeId(this.state.videoUrl);
 
-        if (!ytdl.validateID(videoId)) {
+        if (!this.validateID(videoId)) {
             this.setState({ videoUrlError: true });
             return false;
         }
